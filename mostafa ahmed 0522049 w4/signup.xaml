@@ -1,0 +1,52 @@
+﻿<Page x:Class="me.signup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:me"
+      mc:Ignorable="d" 
+      Background="White"
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="signup">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="94*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="83*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="345*"/>
+            <ColumnDefinition Width="283*"/>
+            <ColumnDefinition Width="172*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Label Content="SIGNUP FORM" HorizontalAlignment="Left" Margin="233,29,0,0" VerticalAlignment="Top" Height="48" Width="264" HorizontalContentAlignment="Center" FontSize="30" Background="#FFEDDADA" Grid.ColumnSpan="2"/>
+        <Label Content="NAME: " HorizontalAlignment="Left" Margin="224,24,0,0" VerticalAlignment="Top" Style="{StaticResource lable}" RenderTransformOrigin="0.928,0.594" Height="50" Width="110" Grid.Row="1"/>
+        <Label Content="PASSWORD: " HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Center" Style="{StaticResource lable}" Width="128" Height="50" Grid.Row="2"/>
+        <Label Content="AGE: " HorizontalAlignment="Left" Margin="215,5,0,0" VerticalAlignment="Top" Style="{StaticResource lable}" RenderTransformOrigin="0.287,-0.705" Height="50" Width="110" Grid.Row="3"/>
+        <Label Content="PHONE: " HorizontalAlignment="Left" Margin="215,12,0,0" VerticalAlignment="Top" Style="{StaticResource lable}" Height="50" Width="110" Grid.Row="5"/>
+        <Label Content="GENDER: " HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Center" Style="{StaticResource lable}" RenderTransformOrigin="0.521,0.75" Height="50" Width="110" Grid.Row="4"/>
+        <Label Content="CITY: " HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Center" Style="{StaticResource lable}" Height="51" Width="110" Grid.Row="6"/>
+        <TextBox x:Name="txtpass" HorizontalAlignment="Center" Margin="0,20,0,8" TextWrapping="Wrap" Style="{StaticResource txtbox}" Grid.Column="1" Width="240" Grid.Row="2"/>
+        <TextBox x:Name="txtage" HorizontalAlignment="Center" Margin="0,19,0,16" TextWrapping="Wrap" Style="{StaticResource txtbox}" Grid.Column="1" Width="240" Grid.Row="3"/>
+        <TextBox x:Name="txtph" HorizontalAlignment="Center" Margin="0,14,0,3" TextWrapping="Wrap" Style="{StaticResource txtbox}" Grid.Column="1" Width="240" Grid.Row="5"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Center" Margin="0,24,0,13" TextWrapping="Wrap" Style="{StaticResource txtbox}" Grid.Column="1" Width="240" Grid.Row="1"/>
+        <ComboBox x:Name="comb" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Width="161" Height="48" Grid.Column="1" Grid.Row="6">
+            <ComboBoxItem>cairo</ComboBoxItem>
+            <ComboBoxItem>aswan</ComboBoxItem>
+        </ComboBox>
+        <Button Content="sing up" HorizontalAlignment="Left" Margin="17,2,0,0" VerticalAlignment="Top" Style="{StaticResource button}" Height="60" Width="135" Grid.Column="1" Grid.Row="7" Click="Button_Click"/>
+        <Label Content="HAVE AN ACCOUNT" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" Width="136" Grid.Column="2" Height="29" Grid.Row="6"/>
+        <Button Content="sing IN" HorizontalAlignment="Left" Margin="0,6,0,0" VerticalAlignment="Top" Style="{StaticResource button}" Grid.Column="2" Height="60" Width="135" Grid.Row="7"/>
+        <RadioButton Grid.Column="1" Content="male" HorizontalAlignment="Left" Margin="52,0,0,0" Grid.Row="4" VerticalAlignment="Center" FontSize="30" Checked="RadioButton_Checked"/>
+        <RadioButton Grid.Column="1" Content="female" HorizontalAlignment="Left" Margin="175,0,0,0" Grid.Row="4" VerticalAlignment="Center" FontSize="30" Checked="RadioButton_Checked_1"/>
+    </Grid>
+</Page>
